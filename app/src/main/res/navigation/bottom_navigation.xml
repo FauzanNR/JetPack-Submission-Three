@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    android:label="Favorite"
+    app:startDestination="@id/id_menu_movie">
+
+    <fragment
+        android:id="@+id/id_menu_movie"
+        android:name="com.app.jetpacksubmissionthree.ui.movie.MovieFragment"
+        android:label="Movie"
+        tools:layout="@layout/movie_fragment">
+        <action
+            android:id="@+id/action_movieFragment_to_tvFragment"
+            app:destination="@id/id_menu_tv" />
+        <action
+            android:id="@+id/action_id_menu_movie_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_menu_tv"
+        android:name="com.app.jetpacksubmissionthree.ui.tv.TvFragment"
+        android:label="Tv Show"
+        tools:layout="@layout/tv_fragment">
+        <action
+            android:id="@+id/action_id_menu_tv_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_id_menu_tv_to_favoriteFragment"
+            app:destination="@id/id_menu_fav" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.app.jetpacksubmissionthree.ui.detail.DetailFragment"
+        android:label="detail_fragment"
+        tools:layout="@layout/detail_fragment" />
+    <fragment
+        android:id="@+id/id_menu_fav"
+        android:name="com.app.jetpacksubmissionthree.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/favorite_fragment">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>

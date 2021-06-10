@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JetPack Submission Three</string>
+    <string name="no_connection">No connection, please turn on your connection then back again!</string>
+    <string name="movie_tab_title">Movie</string>
+    <string name="tv_tab_title">Tv Show</string>
+</resources>

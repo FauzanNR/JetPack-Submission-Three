@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_tab_title">Movie</string>
+    <string name="tv_tab_title">Tv Show</string>
+</resources>
